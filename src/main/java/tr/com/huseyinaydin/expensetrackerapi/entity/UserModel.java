@@ -23,8 +23,8 @@ public class UserModel {
 	@NotBlank(message = "Kullanıcı adı boş geçilemez")
 	private String name;
 
-	@NotNull(message = "Email should not be empty")
-	@Email(message = "Enter a valid email")
+	@NotNull(message = "Kullanıcı e-posta adresi boş geçilemez")
+	@Email(message = "Kullanıcı e-posta adresi doğru formatta e-posta adresi olmalıdır")
 	private String email;
 	
 	@NotNull(message = "Password should not be empty")
