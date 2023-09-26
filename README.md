@@ -1,6 +1,9 @@
 ### Harcama yöneticisi WebAPI uygulaması.
 
 ```
+Spring Boot + Security + Data JPA + JWT + MySQL + Postman teknolojileri kullanılmıştır.
+Çok katmanlı mimariye sahiptir.
+ORM + IoC + DI + Strategy Desing Pattern + Repository Desing Pattern teknikleri kullanılmıştır.
 Harcama yöneticisi WebAPI projesidir.
 Kullanıcı register olduktan sonra login olmak için postman üzerinden email ve şifresini girer.
 Sonrasında ise bir JSON Web Token elde eder. Bu token onun erişim anahtarıdır(jeton).
