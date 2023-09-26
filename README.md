@@ -14,7 +14,7 @@ Kendi profilini güncelleyebilir ve deactive edebilir.
 Deactive işlemi aslında kullanıcıyı komple veritabanından silmektedir. 
 ```
 
-Register ve Login API
+Register ve Login API 
 ---------------------
 Kayıt olmak için Postman ile aşağıdaki endpoint'e POST metodu ile Body / RAW / JSON kısmına
 localhost:8080/api/v1/register
