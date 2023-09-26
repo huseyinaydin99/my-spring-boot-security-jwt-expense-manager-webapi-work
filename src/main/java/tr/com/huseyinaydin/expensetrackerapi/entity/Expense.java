@@ -51,19 +51,19 @@ public class Expense {
 	
 	@Column(name = "expense_name")
 	@NotBlank(message = "Harcama adı boş geçilemez")
-	@Size(min = 3, message = "Expense name must be atleast 3 characters")
+	@Size(min = 3, message = "Harcama adı minimum 3 karakter olabilir")
 	private String name;
 
 	private String description;
 	
 	@Column(name = "expense_amount")
-	@NotNull(message = "Expense amount should not be null")
+	@NotNull(message = "Harcama miktarı boş geçilemez")
 	private BigDecimal amount;
 	
-	@NotBlank(message = "Category should not be null")
+	@NotBlank(message = "Harcama kategorisi boş geçilemez")
 	private String category;
 	
-	@NotNull(message = "Date must not be null")
+	@NotNull(message = "Harcama tarihi boş geçilemez")
 	private Date date;
 	
 	@Column(name = "created_at", nullable = false, updatable = false)
