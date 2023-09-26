@@ -43,6 +43,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<ErrorObject>(errorObject, HttpStatus.NOT_FOUND);
 	}
 
+	//Tip uyuşmazlığı istisnası olduğu zaman devreye giren Aspect'tir.
 	@ExceptionHandler(value = MethodArgumentTypeMismatchException.class)
 	public ResponseEntity<ErrorObject> handleMethodArgumentTypeMismatchException(MethodArgumentTypeMismatchException ex,
 			WebRequest request) {
