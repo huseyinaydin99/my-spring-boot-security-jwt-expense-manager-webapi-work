@@ -3,6 +3,7 @@
 ```
 Spring Boot + Security + Data JPA + JWT + MySQL + Postman teknolojileri kullanılmıştır.
 Çok katmanlı mimariye sahiptir.
+SOLID ve DRY prensipleri kullanılmıştır.
 ORM + IoC + DI + Strategy Desing Pattern + Repository Desing Pattern teknikleri kullanılmıştır.
 Harcama yöneticisi WebAPI projesidir.
 Kullanıcı register olduktan sonra login olmak için postman üzerinden email ve şifresini girer.
