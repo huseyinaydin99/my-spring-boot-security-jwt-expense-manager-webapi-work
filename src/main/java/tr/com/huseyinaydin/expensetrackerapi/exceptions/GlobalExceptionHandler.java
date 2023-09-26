@@ -67,6 +67,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<ErrorObject>(errorObject, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 
+	// ItemExistsException fırlatıldığında otomatik olarak devreye giren Aspect'tir.
 	@ExceptionHandler(ItemExistsException.class)
 	public ResponseEntity<ErrorObject> handleItemExistsException(ItemExistsException ex, WebRequest request) {
 		ErrorObject errorObject = new ErrorObject();
