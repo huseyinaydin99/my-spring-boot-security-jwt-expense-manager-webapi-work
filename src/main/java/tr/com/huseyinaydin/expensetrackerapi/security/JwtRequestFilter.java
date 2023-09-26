@@ -47,9 +47,9 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 			try {
 				username = jwtTokenUtil.getUsernameFromToken(jwtToken);
 			} catch (IllegalArgumentException e) {
-				throw new RuntimeException("Unable to get JWT token");
+				throw new RuntimeException("JSON Web Token alınamadı.");
 			} catch (ExpiredJwtException e) {
-				throw new RuntimeException("Jwt token has expired");
+				throw new RuntimeException("JSON Web Token'in geçerlilik süresi dolmuş valla yapacak bir şey yok.");
 			}
 		}
 		
