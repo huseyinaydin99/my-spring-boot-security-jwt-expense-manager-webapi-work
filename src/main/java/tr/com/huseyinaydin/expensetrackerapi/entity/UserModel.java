@@ -28,7 +28,7 @@ public class UserModel {
 	private String email;
 	
 	@NotNull(message = "Kullanıcı şifresi boş geçilemez")
-	@Size(min = 5, message = "Password should be atleast 5 characters")
+	@Size(min = 5, message = "Kullanıcı şifresi 5 karakterden uzun olmalıdır")
 	private String password;
 	
 	private Long age = 0L;
