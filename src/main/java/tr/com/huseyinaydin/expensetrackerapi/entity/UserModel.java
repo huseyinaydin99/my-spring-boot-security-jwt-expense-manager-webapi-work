@@ -20,7 +20,7 @@ import lombok.Data;
 @Data
 public class UserModel {
 	
-	@NotBlank(message = "Name should not be empty")
+	@NotBlank(message = "Kullanıcı adı boş geçilemez")
 	private String name;
 
 	@NotNull(message = "Email should not be empty")
