@@ -27,7 +27,7 @@ public class UserModel {
 	@Email(message = "Kullanıcı e-posta adresi doğru formatta e-posta adresi olmalıdır")
 	private String email;
 	
-	@NotNull(message = "Password should not be empty")
+	@NotNull(message = "Kullanıcı şifresi boş geçilemez")
 	@Size(min = 5, message = "Password should be atleast 5 characters")
 	private String password;
 	
