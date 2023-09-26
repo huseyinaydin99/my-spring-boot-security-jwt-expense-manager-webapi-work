@@ -16,7 +16,7 @@ Deactive işlemi aslında kullanıcıyı komple veritabanından silmektedir.
 
 Register ve Login API 
 ---------------------
-Kayıt olmak için Postman ile aşağıdaki endpoint'e POST metodu ile Body / RAW / JSON kısmına
+Kayıt olmak için Postman ile aşağıdaki endpoint'e POST metodu ile Body / Raw / JSON kısmına
 localhost:8080/api/v1/register
 {
     "name": "Huseyin",
