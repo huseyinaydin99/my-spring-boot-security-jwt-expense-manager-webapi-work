@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User createUser(UserModel user) {
 		if (userRepository.existsByEmail(user.getEmail())) {
-			throw new ItemExistsException("User is already register with email:"+user.getEmail());
+			throw new ItemExistsException("Kayıt yapmak istediğin kullanıcı zaten var. Aynı e-posta kaydı var. Aha dayıya sor: "+user.getEmail());
 		}
 		User newUser = new User();
 		BeanUtils.copyProperties(user, newUser);
