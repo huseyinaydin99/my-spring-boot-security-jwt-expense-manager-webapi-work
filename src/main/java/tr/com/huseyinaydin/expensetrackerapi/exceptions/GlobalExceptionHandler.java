@@ -55,7 +55,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<ErrorObject>(errorObject, HttpStatus.BAD_REQUEST);
 	}
 
-
+	//Genel istisna olduğunda devreye giren Aspect'tir.
 	@ExceptionHandler(value = Exception.class)
 	public ResponseEntity<ErrorObject> handleGeneralException(Exception ex, WebRequest request) {
 		System.out.println("----  İstisna işlendi.!  ----");
