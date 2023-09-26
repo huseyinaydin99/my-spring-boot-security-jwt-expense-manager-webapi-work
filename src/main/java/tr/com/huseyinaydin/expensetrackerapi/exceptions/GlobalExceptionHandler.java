@@ -31,6 +31,7 @@ import tr.com.huseyinaydin.expensetrackerapi.entity.ErrorObject;
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
+	//ResourceNotFoundException kaynak bulunamadı istisnası oluştuğunda otomatik olarak devreye giren Aspect'tir.
 	@ExceptionHandler(value = ResourceNotFoundException.class)
 	public ResponseEntity<ErrorObject> handleExpenseNotFoundException(ResourceNotFoundException ex,
 			WebRequest request) {
