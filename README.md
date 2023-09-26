@@ -17,6 +17,8 @@ Deactive işlemi aslında kullanıcıyı komple veritabanından silmektedir.
 ```
 
 ### Register ve Login API 
+
+```
 Kayıt olmak için Postman ile aşağıdaki endpoint'e POST metodu ile Body / Raw / JSON kısmına
 localhost:8080/api/v1/register
 {
@@ -36,8 +38,11 @@ girilir ve send butonu ile API'e POST edilir. Artık kullanıcı login olmuştur
 
 İlgili JSON Web Token kopyalanır. Postman'in ilgili Authorization kısmından OAuth2 seçilir ve Token kısmına
 kopyalanılan JSON Web Token yapıştırılır.
+```
 
 ### Expense API
+
+```
 Yeni bir harcama girerken aşağıdaki adrese POST metodu ile Body / RAW / JSON kısmına
 localhost:8080/api/v1/expense
 {
@@ -82,7 +87,7 @@ localhost:8080/api/v1/profile PUT --> adresi girilir.
 ilgili kullanıcının JSON verisi girilerekten güncellemesi yapılır.
 
 localhost:8080/api/v1/deactivate DELETE adresi girilir ve send butonuna basınca ilgili kullanıcı kaydı silinir.
-
+```
 
 
 
