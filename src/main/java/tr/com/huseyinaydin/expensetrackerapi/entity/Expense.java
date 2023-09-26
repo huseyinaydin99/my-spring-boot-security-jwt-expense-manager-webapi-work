@@ -50,11 +50,10 @@ public class Expense {
 	private Long id;
 	
 	@Column(name = "expense_name")
-	@NotBlank(message = "Harcama ismi boş geçilemez")
+	@NotBlank(message = "Harcama adı boş geçilemez")
 	@Size(min = 3, message = "Expense name must be atleast 3 characters")
 	private String name;
-	
-	
+
 	private String description;
 	
 	@Column(name = "expense_amount")
