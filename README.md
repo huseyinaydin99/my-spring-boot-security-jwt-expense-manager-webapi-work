@@ -1,5 +1,6 @@
 ### Harcama yöneticisi WebAPI uygulaması.
 
+### Açıklama
 ```
 Spring Boot + Security + Data JPA + JWT + MySQL + Postman teknolojileri kullanılmıştır.
 Çok katmanlı mimariye sahiptir.
@@ -15,8 +16,9 @@ Kendi profilini güncelleyebilir ve deactive edebilir.
 Deactive işlemi aslında kullanıcıyı komple veritabanından silmektedir. 
 ```
 
-Register ve Login API 
----------------------
+### Register ve Login API 
+
+```
 Kayıt olmak için Postman ile aşağıdaki endpoint'e POST metodu ile Body / Raw / JSON kısmına
 localhost:8080/api/v1/register
 {
@@ -36,10 +38,11 @@ girilir ve send butonu ile API'e POST edilir. Artık kullanıcı login olmuştur
 
 İlgili JSON Web Token kopyalanır. Postman'in ilgili Authorization kısmından OAuth2 seçilir ve Token kısmına
 kopyalanılan JSON Web Token yapıştırılır.
-----------------------
+```
 
-Expense API
-----------------------
+### Expense API
+
+```
 Yeni bir harcama girerken aşağıdaki adrese POST metodu ile Body / RAW / JSON kısmına
 localhost:8080/api/v1/expense
 {
@@ -72,9 +75,10 @@ localhost:8080/api/v1/expenses/?category=Ev GET -> Ev kategorisine ait harcama k
 localhost:8080/api/v1/expenses/?date=2019-04-28T14:45:15 GET -> tarihe göre harcama kayıtlarını döner.
 localhost:8080/api/v1/expenses/?name=Elektrik Faturası -> Harcama kaydının adına göre harcama kayıtlarını döner.
 localhost:8080/api/v1/expense/?expenseId=1 DELETE -> 1 ID'li harcama kaydını siler.
+```
 
---USER API
-----------------------
+### USER API
+```
 localhost:8080/api/v1/profile GET --> login olan kullanıcının kaydını geriye döndürür.
 localhost:8080/api/v1/profile PUT --> adresi girilir.
 {
@@ -85,7 +89,7 @@ localhost:8080/api/v1/profile PUT --> adresi girilir.
 ilgili kullanıcının JSON verisi girilerekten güncellemesi yapılır.
 
 localhost:8080/api/v1/deactivate DELETE adresi girilir ve send butonuna basınca ilgili kullanıcı kaydı silinir.
-
+```
 
 
 
