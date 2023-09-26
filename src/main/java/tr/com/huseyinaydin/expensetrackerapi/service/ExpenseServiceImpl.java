@@ -43,7 +43,7 @@ public class ExpenseServiceImpl implements ExpenseService {
 		if (expense.isPresent()) {
 			return expense.get();
 		}
-		throw new ResourceNotFoundException("Expense is not found for the id "+id);
+		throw new ResourceNotFoundException("Bu ID'de bir harcama kaydı bulunamadı çünkü yok: "+id);
 	}
 
 	@Override
@@ -89,10 +89,6 @@ public class ExpenseServiceImpl implements ExpenseService {
 		if (endDate == null) {
 			endDate = new Date(System.currentTimeMillis());
 		}
-		
 		return expenseRepo.findByUserIdAndDateBetween(userService.getLoggedInUser().getId(), startDate, endDate, page).toList();
 	}
-
-
 }
-
