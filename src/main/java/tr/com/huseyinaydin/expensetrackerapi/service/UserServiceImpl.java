@@ -58,7 +58,7 @@ public class UserServiceImpl implements UserService {
 	public User readUser() {
 		//Long userId = getLoggedInUser().getId();
 		Long userId = 1L;
-		return userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("User not found for the id:"+userId));
+		return userRepository.findById(userId).orElseThrow(() -> new ResourceNotFoundException("Bu ID'de kullanıcı bulunamado: :"+userId));
 	}
 
 	@Override
