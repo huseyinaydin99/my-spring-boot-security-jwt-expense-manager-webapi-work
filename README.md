@@ -91,5 +91,10 @@ ilgili kullanıcının JSON verisi girilerekten güncellemesi yapılır.
 localhost:8080/api/v1/deactivate DELETE adresi girilir ve send butonuna basınca ilgili kullanıcı kaydı silinir.
 ```
 
+### Görseller
 
+![Ekran görüntüsü 2023-09-26 174955](https://github.com/huseyinaydin99/my-spring-boot-security-jwt-expense-manager-webapi-work/assets/16438043/e8b56ff7-a370-40d0-8b06-80b07f3dc7c3)
+![Ekran görüntüsü 2023-09-26 230310](https://github.com/huseyinaydin99/my-spring-boot-security-jwt-expense-manager-webapi-work/assets/16438043/7ea26abe-8b9e-45f7-9f3b-0279ac0b471f)
+![Ekran görüntüsü 2023-09-26 230405](https://github.com/huseyinaydin99/my-spring-boot-security-jwt-expense-manager-webapi-work/assets/16438043/1b4d7c82-aa29-409e-8bce-f66467f4e6a6)
+![Ekran görüntüsü 2023-09-26 230426](https://github.com/huseyinaydin99/my-spring-boot-security-jwt-expense-manager-webapi-work/assets/16438043/6db29f49-00a5-41b5-83f3-a56e831da59c)
 
