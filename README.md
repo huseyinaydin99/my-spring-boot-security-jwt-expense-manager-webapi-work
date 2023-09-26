@@ -98,3 +98,9 @@ localhost:8080/api/v1/deactivate DELETE adresi girilir ve send butonuna basınca
 ![Ekran görüntüsü 2023-09-26 230405](https://github.com/huseyinaydin99/my-spring-boot-security-jwt-expense-manager-webapi-work/assets/16438043/1b4d7c82-aa29-409e-8bce-f66467f4e6a6)
 ![Ekran görüntüsü 2023-09-26 230426](https://github.com/huseyinaydin99/my-spring-boot-security-jwt-expense-manager-webapi-work/assets/16438043/6db29f49-00a5-41b5-83f3-a56e831da59c)
 
+### Video
+
+GitHub 10 MB'ın üzerinde video kabul etmiyor. Ondan dolayı videoyu sıkıştırdım kalite o yüzden düştü.
+Kaliteli izlemek için link: https://youtu.be/YVdwRaqKTn8
+https://github.com/huseyinaydin99/my-spring-boot-security-jwt-expense-manager-webapi-work/assets/16438043/720f33a9-d8c5-44aa-b08b-5853d0c9ee1d
+
